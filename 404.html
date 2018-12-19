@@ -31,31 +31,8 @@
     }
 
     #title {
-        font-size: 1.5em;
+        font-size: 2.5em;
         margin-bottom: 1.5em;
-    }
-
-    input {
-        background: none;
-        color: rgb(131, 131, 131);
-        text-align: center;
-        padding: 5px 10px;
-        outline: none;
-        border: none;
-        border-bottom: #ccc 1px solid;
-        width: 80%;
-        max-width: 700px;
-        font-size: .9em;
-    }
-
-    #notfound {
-        width: 80%;
-        max-width: 700px;
-        line-height: 1.5;
-        font-size: .8em;
-        text-align: center;
-        margin: auto;
-        padding-top: .9em;
     }
 
     .website {
@@ -112,20 +89,6 @@
             </div>
         </div>
     </main>
-
-    <script>
-        var search = document.getElementById("search").getElementsByTagName("input")[0];
-        search.addEventListener("blur", function () {
-            search.value = "";
-        });
-        search.addEventListener("keypress", function (event) {
-            if (event.keyCode == "13") {
-                var data = this.value.replace(/^\s+|\s+$/g, "");
-                this.value = "";
-                window.location.href = "https://abersheeran.com/search/?keyword=" + data.split(" ").join("+");
-            }
-        })
-    </script>
 </body>
 
 </html>
